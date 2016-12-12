@@ -6,7 +6,13 @@
 	box-shadow: 0px 0px 0px 2.4px rgba(255,255,255,0.42);
 }
 
+.user-popout .header{
+	border-bottom:rgba(255,255,255,0.42) 2.7px solid!important;
+	background:none!important;
+}
+
 .avatar-popout .status{
+	visibility:visible!important;
 	z-index:-1!important;
 	border-radius:0px!important;
 	width:250px!important;
@@ -48,11 +54,6 @@
 	border:none!important;
 	margin-bottom:-2.4px!important;
 	z-index:10;
-}
-
-.user-popout .header{
-	border-bottom:rgba(255,255,255,0.42) 2.7px solid!important;
-	background:none!important;
 }
 
 .bot-tag.bot-tag-invert{
