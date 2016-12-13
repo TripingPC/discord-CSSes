@@ -69,3 +69,7 @@
 .user-popout .header.streaming {
     background-color: #593695 !important;
 }
+
+#user-profile-modal .header .header-info .header-info-inner .activity {
+  color: inherit !important;
+}
