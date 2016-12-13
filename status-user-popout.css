@@ -60,3 +60,12 @@
 	background:#36393e;
 	color:#ffffff!important;
 }
+
+.user-popout .username-wrapper .activity, .username,
+.discriminator {
+  color: inherit !important;
+}
+
+.user-popout .header.streaming {
+    background-color: #593695 !important;
+}
