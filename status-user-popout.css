@@ -57,6 +57,14 @@
 	z-index:10;
 }
 
+.user-popout .header .avatar-wrapper.no-hover {
+ 	z-index: -1 !important;
+  	background: #282B30;
+  	padding: 72px 77px 64px 77px !important;
+  	margin: -50px 77px -50px 77px !important;
+  	box-shadow: inset 0px 52px 0 0px rgba(255,255,255,.1);
+}
+
 .bot-tag.bot-tag-invert{
 	background:#36393e;
 	color:#ffffff!important;
@@ -69,6 +77,8 @@
 
 .user-popout .header.streaming {
     background-color: #593695 !important;
+    box-shadow: inset 0px 2px 0 0px rgba(255,255,255,.1);
+}
 }
 
 #user-profile-modal .header .header-info .header-info-inner .activity {
