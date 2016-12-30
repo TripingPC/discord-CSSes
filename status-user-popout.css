@@ -38,7 +38,7 @@
 }
 
 .activity strong:before{
-	content:"ðŸŽ® "!important;
+	content:"🎮 "!important;
 }
 
 .user-popout .username-wrapper .activity, .username, .discriminator{
