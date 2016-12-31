@@ -7,3 +7,6 @@
 	border:6px solid transparent;
 	border-image:url("https://owo.whats-th.is/4888f9.png") 16.2 stretch;
 }
+.chat .message-group .edit-message .avatar-large {
+    visibility: hidden;
+}
