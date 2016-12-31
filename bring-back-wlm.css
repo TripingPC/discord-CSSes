@@ -1,0 +1,9 @@
+.message-group .avatar-large{
+	width:60px;
+	height:60px;
+	background-size:cover;
+	background-repeat:no-repeat;
+	border-radius:0px;
+	border:6px solid transparent;
+	border-image:url("https://owo.whats-th.is/4888f9.png") 16.2 stretch;
+}
