@@ -1,0 +1,13 @@
+div.tooltip.tooltip-normal{
+	background: linear-gradient(to bottom, rgba(253,253,253,1) 0%, rgba(232,230,243,1) 100%);
+	border-radius:0px;
+	color:black;
+	border:1px solid #787878;
+	padding:4px;
+	box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+	font-family:Segoe UI!important;
+	font-size:11px;
+	opacity:1;
+	transition:opacity 0.2s ease;
+	line-height:15.6px;
+}
