@@ -11,3 +11,6 @@ div.tooltip.tooltip-normal{
 	transition:opacity 0.2s ease;
 	line-height:15.6px;
 }
+div.tooltip.tooltip-normal:after {
+    border-color: transparent;
+}
