@@ -1,0 +1,37 @@
+/* Circular account div buttons by TripingPC */
+
+/* SWITCHING up the buttons */
+.btn-mute, .btn-deafen, .btn-settings{
+	border-radius:50%!important;
+	margin-right:18px;
+}
+
+/* aligning the avatar with the buttons */
+.account .avatar-small{margin-left:18px;}
+
+/* making the buttons div invisible */
+.account .btn-group{
+	margin-left:20px;
+	background:none;
+	border:none;
+}
+
+/* giving buttons a lighter bg when inactive */
+.account .btn{background:#282b30;}
+
+/* chaning the general appearance of the account panel */
+.account{
+	border-top:#46494e 1px solid;
+	background:#2e3136;
+}
+
+/* disabling username and discrim */
+.account-details{display:none;}
+
+/* Account button hover colors */
+.btn-mute:hover{background-color:     #fc8006;}
+.btn-deafen:hover{background-color:   #ff030e;}
+.btn-settings:hover{background-color: #3351ed;}
+
+/* fixing icon alignment */
+.account .btn:after{margin-left:0px;}
