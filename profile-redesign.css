@@ -1,0 +1,69 @@
+#user-profile-modal .header:after{visibility: hidden;}
+.avatar-wrapper{background-color: transparent!important;}
+#user-profile-modal .header{
+    background-color:#12A5F4!important;
+    background-image: none;
+    width: 200px;
+    height: 546px;
+}
+
+#user-profile-modal{
+    display: flex;
+    flex-direction: row;
+}
+
+.tab-bar-container{
+    display: inline!important;
+    width: 325px;
+    height: 56px!important;
+    padding:0;
+    margin: 0;
+    background: #FFFFFF!important;
+    z-index: 99;
+}
+
+#user-profile-modal > div.tab-bar-container > div{
+    margin:0!important;
+    left: 215px!important;
+    position: absolute;
+    background-color: #FFFFFF!important;
+    z-index: 99!important;
+}
+
+.header-info{
+    position: absolute;
+    width: 175px!important;
+    left: 0px;
+    text-align: center;
+    padding-right: 40px;
+    margin-top: -80px;
+    color: white!important;
+}
+
+.header-info-inner, .header-info-inner.activity{
+    width: 215px!important;
+    color: white;
+}
+.header-info-inner .discord-tag{color: white!important;}
+.header-info-inner .activity{
+    padding-left: 0;
+    padding-right: 0;
+    width: 215px!important;
+}
+
+#user-profile-modal > div.scroller-wrap.fade{
+    width: 360px!important;
+    height: 490px!important;
+    left: -233px;
+    top: 55px;
+    border-top: white 4px solid!important;
+}
+
+.scroller.guilds{
+    width: 304px;
+}
+
+.btn-add-friend{
+    left: 0!important;
+    position: absolute!important;
+}
