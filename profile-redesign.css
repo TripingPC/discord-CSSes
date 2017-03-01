@@ -22,12 +22,56 @@
     z-index: 99;
 }
 
-#user-profile-modal > div.tab-bar-container > div{
+#user-profile-modal .tab-bar .tab-bar-item.selected {
+  color: #000000;
+}
+
+#user-profile-modal .tab-bar .tab-bar-item {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#user-profile-modal .scroller, #user-profile-modal > div.tab-bar-container > div {
+  width: 350px;
+}
+
+#user-profile-modal .tab-bar-container {
+  box-shadow: none;
+}
+
+#user-profile-modal .guilds .section .connected-accounts .connected-account {
+  margin-left: 20px;
+}
+
+#user-profile-modal > div.tab-bar-container > div {
     margin:0!important;
-    left: 215px!important;
+    left: 230px!important;
     position: absolute;
     background-color: #FFFFFF!important;
     z-index: 99!important;
+}
+
+#user-profile-modal .header .header-info .badge-premium {
+    position: absolute;
+    top: -150px;
+    left: 15px;
+}
+
+#user-profile-modal .actions .btn.add-friend {
+    position: absolute;
+    left: 30px;
+    top: 30em;
+}
+
+#user-profile-modal .empty {
+  position: relative;
+  left: -250px;
+  padding-left: 120px;
+  padding-right: 200px;
+  width: 200px;
+}
+
+#user-profile-modal .header .header-info .header-info-inner {
+  position: absolute;
 }
 
 .header-info{
