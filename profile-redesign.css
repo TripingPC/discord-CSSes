@@ -10,6 +10,7 @@
 #user-profile-modal{
     display: flex;
     flex-direction: row;
+    width: 600px;
 }
 
 .tab-bar-container{
@@ -23,23 +24,72 @@
 }
 
 #user-profile-modal .tab-bar .tab-bar-item.selected {
-  color: #000000;
+    color: #000000;
 }
 
 #user-profile-modal .tab-bar .tab-bar-item {
-  color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 #user-profile-modal .scroller, #user-profile-modal > div.tab-bar-container > div {
-  width: 350px;
+    width: 350px;
+}
+
+#user-profile-modal .header .additional-actions-icon:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    z-index: 5;
+    position: absolute;
+    top: 15px;
+    right: calc(50% - 9px);
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_arrow_down_white_24px.svg);
+    background-size: cover;
+    transition: all .2s ease;
+}
+
+#user-profile-modal .header .additional-actions-icon:hover:after {
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    right: calc(50% - 12px);
+    transition: all .2s ease;
+}
+
+#user-profile-modal .header .additional-actions-icon:before {
+    content: 'Actions';
+    color: #fff;
+    line-height: 24px;
+    transition: all .2s ease;
+}
+
+#user-profile-modal .header .additional-actions-icon:hover:before {
+    font-size: 20px;
+    line-height: 18px;
+    transition: all .2s ease;
+}
+
+#user-profile-modal .header .additional-actions-icon {
+    left: 0px;
+    top: 0px;
+    display: block;
+    width: 203px;
+    background-image: linear-gradient(to bottom, rgba(86,193,251,1) 0%, rgba(16,164,244,1) 100%);
+    text-align: center;
+    line-height: 24px;
+    vertical-align: middle;
+    transition: background-image .2s ease;
 }
 
 #user-profile-modal .tab-bar-container {
-  box-shadow: none;
+    box-shadow: none;
+    padding-right: 137px;
+    border-top-right-radius: 5px;
 }
 
 #user-profile-modal .guilds .section .connected-accounts .connected-account {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 
 #user-profile-modal > div.tab-bar-container > div {
@@ -48,6 +98,8 @@
     position: absolute;
     background-color: #FFFFFF!important;
     z-index: 99!important;
+    width: 335px;
+    border-top-right-radius: 5px;
 }
 
 #user-profile-modal .header .header-info .badge-premium {
@@ -63,15 +115,15 @@
 }
 
 #user-profile-modal .empty {
-  position: relative;
-  left: -250px;
-  padding-left: 120px;
-  padding-right: 200px;
-  width: 200px;
+    position: relative;
+    left: -250px;
+    padding-left: 120px;
+    padding-right: 200px;
+    width: 200px;
 }
 
 #user-profile-modal .header .header-info .header-info-inner {
-  position: absolute;
+    position: absolute;
 }
 
 .header-info{
@@ -101,6 +153,12 @@
     left: -233px;
     top: 55px;
     border-top: white 4px solid!important;
+    margin-left: -117px;
+    border-bottom-right-radius: 5px;
+}
+
+#user-profile-modal .scroller {
+    border-bottom-right-radius: 5px;
 }
 
 .scroller.guilds{
