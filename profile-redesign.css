@@ -5,12 +5,14 @@
     background-image: none;
     width: 200px;
     height: 546px;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 8px 0px;
+    overflow: hidden;
 }
 
 #user-profile-modal{
     display: flex;
     flex-direction: row;
-    width: 600px;
+    width: 750px;
 }
 
 .tab-bar-container{
@@ -84,7 +86,7 @@
 
 #user-profile-modal .tab-bar-container {
     box-shadow: none;
-    padding-right: 137px;
+    padding-right: 332px;
     border-top-right-radius: 5px;
 }
 
@@ -116,22 +118,31 @@
 
 #user-profile-modal .empty {
     position: relative;
-    left: -250px;
-    padding-left: 120px;
-    padding-right: 200px;
-    width: 200px;
+    width: 660px;
+    right: 545px;
+    padding-left: 219px;
+    padding-right: 218px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#user-profile-modal .empty .spinner {
+    margin: 33px;
 }
 
 #user-profile-modal .header .header-info .header-info-inner {
     position: absolute;
 }
 
+#user-profile-modal .guilds .avatar-large {
+    background-color: transparent;
+}
+
 .header-info{
     position: absolute;
-    width: 175px!important;
+    width: 215px!important;
     left: 0px;
     text-align: center;
-    padding-right: 40px;
     margin-top: -80px;
     color: white!important;
 }
@@ -147,22 +158,63 @@
     width: 215px!important;
 }
 
+.header-info .profile-badge:not(.badge-premium) {
+    width: 100%!important;
+    margin-top: 150px;
+    margin-right: 0!important;
+    background-position-x: 50%!important;
+    height: 50px!important;
+    background-size: contain;
+    background-color: #4fbcf7;
+    z-index: 2;
+    transition: all .2s ease;
+}
+
+.header-info .profile-badge:not(.badge-premium):before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-left: 0%;
+    box-shadow: #4fbcf7 0px 0px 20px 0px;
+    z-index: 1;
+    transition: all .2s ease;
+}
+.header-info .profile-badge:hover:not(.badge-premium) {
+    background-color: #6ac9fd;
+    transition: all .2s ease;
+}
+
+.header-info .profile-badge:hover:not(.badge-premium):before {
+    box-shadow: #6ac9fd 0px 0px 20px 0px;
+    transition: all .2s ease;
+}
+
 #user-profile-modal > div.scroller-wrap.fade{
-    width: 360px!important;
-    height: 490px!important;
-    left: -233px;
+    height: 487px!important;
     top: 55px;
     border-top: white 4px solid!important;
-    margin-left: -117px;
+    margin-left: -3px;
+    left: -542px;
     border-bottom-right-radius: 5px;
 }
 
 #user-profile-modal .scroller {
     border-bottom-right-radius: 5px;
+    width: 535px;
 }
-
+#user-profile-modal .guilds .section .connected-accounts .connected-account:nth-child(odd) {
+    margin-left: 18px;
+}
+#user-profile-modal .guilds .section .connected-accounts .connected-account:nth-child(even) {
+    margin-right: 15px;
+}
+#user-profile-modal .scroller .section:nth-child(2) {
+    margin-right: 5px;
+    margin-left: 10px;
+}
 .scroller.guilds{
-    width: 304px;
+    width: 450px;
 }
 
 .btn-add-friend{
