@@ -1,0 +1,10 @@
+/* Adds a link under direct-upload images to open in the browser without the need to click on the image first */
+.attachment-image a:after{
+	content: "Open original";
+	visibility: visible;
+	display: block;
+	text-decoration-style: none;
+	font-size: small;
+	padding-top: 4px;
+	color: rgba(255,255,255,0.5);
+}
