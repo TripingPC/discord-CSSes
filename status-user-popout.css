@@ -1,17 +1,4 @@
-.user-popout{box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.5)!important;}
-
-.user-popout .avatar-wrapper .avatar-popout{
-	z-index:8!important;
-	border:none!important;
-	box-shadow: 0px 0px 0px 2.4px rgba(255,255,255,0.42);
-}
-
-.user-popout .header{
-	border-bottom:rgba(255,255,255,0.42) 2.7px solid!important;
-	background:none!important;
-}
-
-.avatar-popout .status{
+.userPopout-4pfA0d .avatarWrapper-2Gfmp1 .avatarStatus-1g8f0K{
 	visibility:visible!important;
 	z-index:-1!important;
 	border-radius:0px!important;
@@ -21,36 +8,47 @@
 	border:none!important;
 	left:-80px!important;
 	-webkit-filter:brightness(80%)!important;
+	box-shadow: 0px 0px 0px 2.4px rgba(255,255,255,0.42);
 }
 
-.activity{
-	visibility:hidden;
-	padding-left:12px;
-	padding-right:12px;
-	letter-spacing:-8px;
+#user-profile-modal .avatar-wrapper a:hover .avatar-profile::before{
+    background-color: rgba(0,0,0,0.5);
+    content: 'view profile\A picture';
+    text-transform: uppercase;
+    white-space: pre;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    border-radius: 100%;
+    width: 128px;
+    padding: 40.5% 0 40.5% 0;
+    text-align: center;
+    display: block;
 }
 
-.activity strong{
-	visibility:visible!important;
-	-webkit-filter:brightness(700%)!important;
-	width:220px!important;
-	letter-spacing:0px!important;
+#user-profile-modal .avatar-wrapper .status{
+    border: none;
+    border-radius: 0px;
+    width: 540px;
+    height: 210px;
+    visibility: visible!important;
+    -webkit-filter:brightness(90%)!important;  
+    right: -368px;
+    bottom: -38px;
+    z-index: -2;
 }
 
-.activity strong:before{
-	content:"🎮 "!important;
+.member-activity strong::before, #user-profile-modal .activity strong::before, .userPopout-4pfA0d .headerActivityText-3qBQRo strong::before{
+    position: static;
+    content:"\1F3AE "!important;
+    visibility: visible!important;
+    -webkit-filter:brightness(700%)!important;
+    filter:brightness(700%)!important;
+    margin-left: -37px;
+    margin-right: 3px;
 }
 
-.user-popout .username-wrapper .activity, .username, .discriminator{
-	color:white!important;
-}
-
-.nickname{
-	font-size:20px!important;
-	line-height:27px!important;
-}
-
-.live-on-twitch{
+.headerLive-2dDMvp{
 	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
 	border:none!important;
 	margin-bottom:-2.4px!important;
@@ -65,21 +63,75 @@
   	box-shadow: inset 0px 52px 0 0px rgba(255,255,255,.1);
 }
 
-.bot-tag.bot-tag-invert{
-	background:#36393e;
-	color:#ffffff!important;
+#user-profile-modal .header, #user-profile-modal .tab-bar-container, #user-profile-modal, .inner-1_1f7b, #user-profile-modal .tab-bar-container .tab-bar, #user-profile-modal .header::after, #user-profile-modal .avatar-wrapper{
+    background: none;
 }
 
-.user-popout .username-wrapper .activity, .username,
-.discriminator {
-  color: inherit !important;
+#user-profile-modal .actions button, #user-profile-modal .discord-tag .kawaii-tag, #user-profile-modal .discord-tag .bot-tag, .userPopout-4pfA0d .headerText-3tKBWq .botTag-1OwMgs{
+    background-color: rgba(0,0,0,0.2)!important;
 }
 
-.user-popout .header.streaming {
+.userPopout-4pfA0d .headerStreaming-3F-wjT {
     background-color: #593695 !important;
     box-shadow: inset 0px 2px 0 0px rgba(255,255,255,.1);
 }
 
-#user-profile-modal .header .header-info .header-info-inner .activity {
-  color: inherit !important;
+.userPopout-4pfA0d .header-3mZJcV{
+	border-bottom:rgba(255,255,255,0.42) 2.7px solid!important;
+	background: none!important;
+}
+
+#user-profile-modal .avatar-wrapper .avatar-profile{
+    border: solid 4px rgba(0,0,0,0.2);
+}
+
+.userPopout-4pfA0d .avatarNormal-3luwna{
+    border-color: rgba(0,0,0,0.2);
+}
+
+.userPopout-4pfA0d{
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.5)!important;
+}
+
+#user-profile-modal .tab-bar-container .tab-bar .tab-bar-item, #user-profile-modal .activity{
+    color: lightgray!important;
+}
+
+#user-profile-modal .tab-bar-container .tab-bar .tab-bar-item.selected, #user-profile-modal .discord-tag *, .userPopout-4pfA0d .headerText-3tKBWq *{
+    color: white!important;
+}
+
+.userPopout-4pfA0d .headerText-3tKBWq .headerName-2N8Pdz{
+	font-size:20px!important;
+	line-height:27px!important;
+}
+
+#user-profile-modal .activity strong::before{
+    margin-left: -45px;
+}
+
+#user-profile-modal .avatar-wrapper{
+    overflow: visible;
+}
+
+#user-profile-modal .avatar-wrapper{
+    position: absolute;
+}
+
+.member-activity, #user-profile-modal .activity, .userPopout-4pfA0d .headerActivityText-3qBQRo{
+    visibility: hidden!important;
+    width: fit-content;
+    overflow: visible;
+}
+
+.member-activity strong, #user-profile-modal .activity strong, .userPopout-4pfA0d .headerActivityText-3qBQRo strong{
+    visibility: visible!important;
+}
+
+#user-profile-modal .tab-bar-container{
+    z-index: 1;
+}
+
+#user-profile-modal .header .additional-actions-icon{
+    -webkit-filter: brightness(700%)!important;
 }
