@@ -120,6 +120,8 @@
 
 .member-activity, #user-profile-modal .activity, .userPopout-4pfA0d .headerActivityText-3qBQRo{
     visibility: hidden!important;
+    width: fit-content;
+    overflow: visible;
 }
 
 .member-activity strong, #user-profile-modal .activity strong, .userPopout-4pfA0d .headerActivityText-3qBQRo strong{
