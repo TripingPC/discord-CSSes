@@ -1,0 +1,242 @@
+   /*__  ___       ______     ________
+    / / / / |     / / __ \   /_  __/ /_  ___  ____ ___  ___
+   / / / /| | /| / / /_/ /    / / / __ \/ _ \/ __ `__ \/ _ \
+  / /_/ / | |/ |/ / ____/    / / / / / /  __/ / / / / /  __/
+  \____/  |__/|__/_/        /_/ /_/ /_/\___/_/ /_/ /_/\___/ */
+
+/* Because making acrylic in CSS is gonna get me anywhere in life. */
+
+/* Muli from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+/* Font stuff */
+body{font-family: 'Muli', 'IpaEX Gothic', 'sans-serif';}
+
+/* background */
+[class*='container-']:first-of-type{background: rgba(49, 49, 49, 0.751); /* change the last value here for opacity */}
+.theme-dark [class*='layer-']{
+	background:url("https://colors.is-pretty.cool/0035d8.png"); /* image url goes here */
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+/* chat textbox */
+.chat form{border: none!important;}
+[class*='ellipsis']{display:none;}
+[class*='typing'] .text{margin-left: 2px;}
+.typing .text strong{text-decoration: none;}
+[class*='inner-'], [class*='innerEnabled-'], [class*='innerDisabled-'], [class*='innerEnabledNoAttach-']{
+    border-radius: 0!important;
+    background: rgba(0, 0, 0, 0.315)!important;
+    border: 1px rgba(0, 0, 0, 0.5) solid!important;
+}
+
+/* >scrollbars in current year */
+::-webkit-scrollbar{width:0!important;}
+
+.theme-dark .chat{
+    background: rgba(0, 0, 0, 0.246)!important;
+}
+
+/* transparency */
+.theme-dark .ui-standard-sidebar-view, .sidebar-region{background: rgba(56, 56, 56, 0.26)!important;}
+[class*='channels-'], .guilds-wrapper{background: rgba(0,0,0,0.1) !important;}
+#friends .friends-table, .channel-members, .channel-members-loading,
+.chat .content, .chat form, .chat,
+.content .flex-spacer,
+.messages-wrapper,
+[class*='channels-'] [class*='container-'],
+[class*='headerBar-'],
+[class*='titleWrapper-'] [class*='title-'],
+[class*='typing-']
+{
+  background: transparent !important;
+}
+
+/* the stupid line */
+.messages-wrapper + form {
+  box-shadow: none !important;
+}
+
+.message-group{
+	border: 1px solid!important;
+	border-color: rgba(0, 0, 0, 0.2)!important;
+	border-color: #000000;
+	margin: 24px;
+	/* box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.4); */
+	/*background-color: #4D4F66;*/
+	background-color: rgba(0, 0, 0, 0.3)!important;
+	padding-left: 5px;
+	padding-top: 6px;
+	padding-bottom: 2px;
+	border-radius: 2px!important;
+	backdrop-filter: blur(3px);
+	/* background-image: url("https://i-still-think-linux.is-pretty.cool/970b3c.png")!important; */
+	background-attachment: fixed!important;
+	background-repeat: repeat-x;
+}
+/* .message-group:last-of-type{margin-bottom: 6px;} */
+
+/* avatars */
+.message-group .avatar-large{
+	width:60px;
+	height:60px;
+	margin-right:5px;
+	background-size:cover;
+	background-repeat:no-repeat;
+	border-radius: 2px;
+	margin-bottom:2px;
+	/*filter: drop-shadow(5px 5px 0px rgba(0,0,0,0.3));*/
+}
+
+/* nametags */
+.user-name{
+    background-color:rgba(0,0,0,0.3);
+    padding-left:6px;
+    padding-right:6px;
+    padding-bottom:2px;
+	border-radius: 2px;
+	margin-top:-2px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	filter:brightness(140%) contrast(110%);
+	margin-left:-2px;
+}
+
+/* channel selection */
+[class*='contentHoveredText-']{
+	background: rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 0;
+	margin-right: 12px;
+}
+[class*='contentSelectedText-']{
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 0;
+	margin-right: 12px;
+}
+
+/* bottom-left ava and settings box */
+[class*='accountDetails']{display:none;}
+[class*='accountDetails'] + div{width: 140px;}
+[class*='accountDetails'] + div div{margin-left: 15px;}
+[class*='channels']:nth-child(0){background: #03FC04}
+[class*='channels-'] [class*='container-'] [class*='avatar']{margin-left: 19px;}
+
+/* layout memes */
+@media screen and (max-width:900px){
+	[class*='channels-']{width: 0px!important;}
+	[class*='voiceUserSummaryItem-']{opacity: 0!important;}
+	[class*='channels-'] [class*='container-']:last-of-type{
+		position: absolute;
+		top: -2.5px;
+		right: -4px;
+		flex-direction: row-reverse;
+		z-index: 200;
+	}
+	[class*='titleWrapper-'] [class*='flex-'] [class*='flex-']{margin-right: 142px}
+	.popout-bottom-left{margin-left: -180px;}
+	[class*='accountDetails'] + div div{margin-left: 1px;}
+	[class*='channels-'] [class*='container-'] [class*='avatar']{margin-left: -32px;}
+}
+
+/* Windows stuff */
+[class*='typeWindows-']{display:none;}
+
+.member .avatar-small{
+	border-radius: 3px;
+	background-color: #2f2f2f;
+}
+
+.member .avatar-small .status-online{border-color:#1D7BCB!important;}
+.member .avatar-small .status-idle{border-color:#FDDB6D!important;}
+.member .avatar-small .status-dnd{border-color:#b32a1d!important;}
+.member .avatar-small .status-offline, .member .avatar-small .status-invisible{border-color:#F1F3F4!important;}
+.status-online{background-color:#1D7BCB;}
+.status-idle{background-color:#FDDB6D;}
+.status-dnd{background-color:#b32a1d;}
+.status-offline, .status-invisible{background-color:#F1F3F4;}
+
+.member:hover, .member.popout-open{
+	background: rgba(255, 255, 255, 0.1)!important;
+	border: 1px solid rgba(255, 255, 255, 0.2)!important;
+	margin-right: 6px;
+}
+
+.member .avatar-small .status{
+	border-radius: 50%;
+	top:11.3px;
+	left:-12px;
+	width:8px;
+	height:8px;
+	border-width: 0px;
+}
+
+[class*='topic-'] .emoji{display:none;}
+
+.avatar-large[style*="a_"] + .comment .message.first .body .username-wrapper:after {
+	content: 'Nitro';
+	color: #fc964b;
+	margin-left: 5px;
+	background: #1f1f1f;
+	line-height: 16px;
+	height: 20px;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    border-radius: 3px;
+    margin-left: 6px;
+    padding: 3px 2px;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: text;
+}
+
+.member.member-status > .avatar-small[style*="a_"] + .member-inner .member-username:after {
+	content: 'Nitro';
+	color: #fc964b;
+	margin-left: 5px;
+	background: #1f1f1f;
+    line-height: 15px;
+    height: 14px;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    border-radius: 3px;
+    margin-left: 6px;
+    padding: 1px 2px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.channel-textarea-autocomplete-inner .avatar-small[style*="a_"] + .discord-tag:after,
+.channel-textarea-autocomplete-inner .avatar-small[style*="a_"] + .username:after {
+    content: ' ';
+    position: absolute;
+    background: url(https://canary.discordapp.com/assets/65f0a0df5563e21de7b1aeeafaf31d78.svg);
+    background-size: 20px;
+    width: 20px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+.channel.channel-voice:not(.collapsed) .avatar-small[style*="a_"] + span:after {
+    content: ' ';
+    position: absolute;
+    background: url(https://canary.discordapp.com/assets/65f0a0df5563e21de7b1aeeafaf31d78.svg);
+    background-size: 20px;
+    width: 20px;
+    height: 15px;
+    margin-top: 1.5px;
+    margin-left: 5px;
+}
+
+.channel.channel-voice li.speaking .avatar-small[style*="a_"] {
+    border-color: #fc964b;
+}
+
+[class*='embedVideo-'][class*='embedImage-']{height: auto!important;}
+[class*='embedVideo-'] [class*='imageWrapper-']{height: 90px!important}
+[class*='embedVideo-'] img{
+	height: auto!important;
+	margin-top: -18%;
+}
