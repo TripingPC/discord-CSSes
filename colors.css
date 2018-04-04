@@ -87,7 +87,7 @@ body{font-family: 'Muli', 'IpaEX Gothic', 'sans-serif';}
 	background-repeat:no-repeat;
 	border-radius: 2px;
 	margin-bottom:2px;
-	/*filter: drop-shadow(5px 5px 0px rgba(0,0,0,0.3));*/
+	filter: drop-shadow(5px 5px 0px rgba(0,0,0,0.3));
 }
 
 /* nametags */
