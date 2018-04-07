@@ -42,6 +42,7 @@ body{font-family: 'Muli', 'IpaEX Gothic', 'sans-serif';}
 /* transparency */
 .theme-dark .ui-standard-sidebar-view, .sidebar-region{background: rgba(56, 56, 56, 0.26)!important;}
 [class*='channels-'], .guilds-wrapper{background: rgba(0,0,0,0.1) !important;}
+[class*='scroller-'] [class*='members-'],
 #friends .friends-table, .channel-members, .channel-members-loading,
 .chat .content, .chat form, .chat,
 .content .flex-spacer,
