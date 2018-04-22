@@ -1,10 +1,9 @@
-   /*__  ___       ______     ________
-    / / / / |     / / __ \   /_  __/ /_  ___  ____ ___  ___
-   / / / /| | /| / / /_/ /    / / / __ \/ _ \/ __ `__ \/ _ \
-  / /_/ / | |/ |/ / ____/    / / / / / /  __/ / / / / /  __/
-  \____/  |__/|__/_/        /_/ /_/ /_/\___/_/ /_/ /_/\___/ */
-
-/* Because making acrylic in CSS is gonna get me anywhere in life. */
+ /* _____      _                 _____  _____ _____ 
+  / ____|    | |               / ____|/ ____/ ____|
+  | |     ___ | | ___  _ __ ___| |    | (___| (___  
+  | |    / _ \| |/ _ \| '__/ __| |     \___ \\___ \ 
+  | |___| (_) | | (_) | |  \__ \ |____ ____) |___) |
+   \_____\___/|_|\___/|_|  |___/\_____|_____/_____/*/
 
 /* Muli from Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Muli');
@@ -15,7 +14,7 @@ body{font-family: 'Muli', 'IpaEX Gothic', 'sans-serif';}
 /* background */
 [class*='container-']:first-of-type{background: rgba(49, 49, 49, 0.751); /* change the last value here for opacity */}
 .theme-dark [class*='layer-']{
-	background:url("https://colors.is-pretty.cool/0035d8.png"); /* image url goes here */
+	background:url("https://aikatsu.is-pretty.cool/1961df.png"); /* image url goes here */
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center;
@@ -40,9 +39,10 @@ body{font-family: 'Muli', 'IpaEX Gothic', 'sans-serif';}
 }
 
 /* transparency */
-.theme-dark .ui-standard-sidebar-view, .sidebar-region{background: rgba(56, 56, 56, 0.26)!important;}
+[class*='members-'], #friends{background:transparent!important;}
+.theme-dark .ui-standard-sidebar-view, .sidebar-region{background: rgba(35, 35, 35, 0.92)!important; border-right:24px solid transparent;}
+.theme-dark .ui-standard-sidebar-view, .content-region{background:rgba(27, 27, 27, 0.79)!important;}
 [class*='channels-'], .guilds-wrapper{background: rgba(0,0,0,0.1) !important;}
-[class*='members-'],
 #friends .friends-table, .channel-members, .channel-members-loading,
 .chat .content, .chat form, .chat,
 .content .flex-spacer,
