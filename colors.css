@@ -14,7 +14,7 @@ body{font-family: 'Muli', 'IpaEX Gothic', 'sans-serif';}
 /* background */
 [class*='container-']:first-of-type{background: rgba(49, 49, 49, 0.751); /* change the last value here for opacity */}
 .theme-dark [class*='layer-']{
-	background:url("https://aikatsu.is-pretty.cool/1961df.png"); /* image url goes here */
+	background:url("https://owo.whats-th.is/1961df.png"); /* image url goes here */
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center;
