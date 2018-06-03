@@ -7,14 +7,17 @@
 		right: -4px;
 		flex-direction: row-reverse;
 		z-index: 200;
+		background: transparent;
 	}
-	[class*='titleWrapper-'] [class*='flex-'] [class*='flex-']{margin-right: 142px}
+	[class*='titleWrapper-'] [class*='flex-'] [class*='flex-']{margin-right: 175px;}
 	.popout-bottom-left{margin-left: -180px;}
 	[class*='accountDetails'] + div div{margin-left: 1px;}
 	[class*='channels-'] [class*='container-'] [class*='avatar']{margin-left: -32px;}
+	[class*='accountDetails']{display:none;}
+	[class*='accountDetails'] + div{
+		width: 80px;
+		margin-right: 48px;
+	}
+	[class*='accountDetails'] + div div{margin-left: 15px;}
+	[class*='channels-'] [class*='container-'] [class*='avatar']{margin-left: 19px;}
 }
-
-[class*='accountDetails']{display:none;}
-[class*='accountDetails'] + div{width: 140px;}
-[class*='accountDetails'] + div div{margin-left: 15px;}
-[class*='channels-'] [class*='container-'] [class*='avatar']{margin-left: 19px;}
