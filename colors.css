@@ -241,3 +241,49 @@ body{font-family: 'Muli', 'IpaEX Gothic', 'sans-serif';}
 	height: auto!important;
 	margin-top: -18%;
 }
+
+/* modal memes */
+
+[class*="modal-"] [class*="header-"]{
+	padding:0;
+    padding-right:10px;
+}
+
+[class*="modal-"] [class*="image-"][class*="maskProfile-"][class*="mask-"]{
+	-webkit-mask:none!important;
+    mask:none!important;
+    border-radius:0!important;
+}
+
+[class*="modal-"] [class*="avatar-"][class*="profile-"]{
+	z-index:1;
+}
+
+[class*="modal-"] [class*="image-"][class*="maskProfile-"][class*="mask-"]:before{
+	display:block;
+    visibility:visible;
+    content: " ";
+    background-image:inherit;
+    width: 600px;
+    z-index: -1;
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: .4;
+}
+
+[class*="modal-"] [class*="headerInfo-"], [class*="modal-"] [class*="additionalActionsIcon-"]{
+	z-index:99;
+}
+
+[class*="modal-"] [class*="topSectionNormal-"] [class*="actionButton-"]{
+	background-color: #ffffff40;
+    color: #fff;
+    z-index:999!important;
+}
+    
+[class*="modal-"] [class*="status-"][class*="statusProfile-"]{
+	box-shadow:none!important;
+}
